@@ -1,8 +1,282 @@
-    <footer>
+            input[type="text"],
+            input[type="number"] {
+                font-size: 16px; /* Prevents zoom on iOS */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RE-USE.SYSTEMS Logo">
+                        <title>RE-USE.SYSTEMS - MOD Aviation Equipment Specialists</title>
+                        <path d="M100 40 L130 90 L70 90 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
+                        <path d="M40 130 L70 80 L90 120 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
+                        <path d="M160 130 L130 80 L110 120 Z" fill="#FF6600" stroke="#E55A00" stroke-width="3"/>
+                        <path d="M85 95 L55 135 L65 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
+                        <path d="M115 95 L145 135 L135 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
+                        <path d="M100 125 L100 85" fill="none" stroke="#FF6600" stroke-width="2"/>
+                        <g transform="translate(140, 40) scale(0.3)">
+                            <path d="M0 20 L30 10 L40 15 L30 20 L40 25 L30 30 L0 20 Z" fill="#FF6600"/>
+                            <path d="M10 20 L5 10 L15 20 L5 30 Z" fill="#E55A00"/>
+                        </g>
+                        <circle cx="100" cy="105" r="20" fill="#2F3A45" stroke="#F6F7F9" stroke-width="3"/>
+                        <line x1="100" y1="95" x2="100" y2="105" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
+                        <path d="M90 105 A 15 15 0 1 1 110 105" fill="none" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
+                    </svg>
+                    <div class="logo-text">Re-<span>Use</span> <span style="font-size: 14px; letter-spacing: 3px;">SYSTEMS</span></div>
+                </div>
+                <address class="contact-header" style="font-style: normal;">
+                    <div class="contact-item">
+                        <span aria-hidden="true">📍</span>
+                        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">23 Westgate Street</span>, 
+                            <span itemprop="postalCode">PL15 7AD</span>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span aria-hidden="true">🏢</span>
+                        <span>A <a href="http://re-use.group" target="_blank" rel="noopener">Re-Use.Group</a> Company</span>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" role="banner">
+        <div class="container">
+            <div class="hero-badge">Cornwall, UK • Trusted Since 2023</div>
+            <h1>Preserving RAF History</h1>
+            <p class="hero-tagline">Military Heritage. Sustainable Future.</p>
+            <p>Authentic MOD aviation equipment, RAF collectibles, and vintage aircraft parts for enthusiasts and professionals across the UK.</p>
+            <div class="cta-buttons">
+                <a href="#listings" class="btn btn-primary">Shop Our Collection</a>
+                <a href="#about" class="btn btn-secondary">Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scrolling Marquee -->
+    <div class="marquee-container" role="marquee" aria-label="Product categories">
+        <div class="marquee">
+            <div class="marquee-text">
+                <span>MOD AVIATION EQUIPMENT</span>
+                <span class="marquee-separator">•</span>
+                <span>RAF COLLECTIBLES</span>
+                <span class="marquee-separator">•</span>
+                <span>VINTAGE AIRCRAFT PARTS</span>
+                <span class="marquee-separator">•</span>
+                <span>MILITARY SURPLUS</span>
+                <span class="marquee-separator">•</span>
+                <span>COMMUNICATIONS EQUIPMENT</span>
+                <span class="marquee-separator">•</span>
+                <span>AVIATION TEST GEAR</span>
+                <span class="marquee-separator">•</span>
+                <span>MOD AVIATION EQUIPMENT</span>
+                <span class="marquee-separator">•</span>
+                <span>RAF COLLECTIBLES</span>
+                <span class="marquee-separator">•</span>
+                <span>VINTAGE AIRCRAFT PARTS</span>
+                <span class="marquee-separator">•</span>
+                <span>MILITARY SURPLUS</span>
+                <span class="marquee-separator">•</span>
+                <span>COMMUNICATIONS EQUIPMENT</span>
+                <span class="marquee-separator">•</span>
+                <span>AVIATION TEST GEAR</span>
+                <span class="marquee-separator">•</span>
+            </div>
+        </div>
+    </div>
+
+    <section class="content-section" id="about" itemscope itemtype="https://schema.org/AboutPage">
+        <div class="container">
+            <h2 class="section-title">About RE-USE.Systems</h2>
+            <div class="about-content" itemprop="description">
+                <p>At RE-USE.Systems, we are dedicated to <strong>preserving RAF history</strong> through the careful curation and sale of authentic <strong>MOD aviation equipment</strong>. Our mission is to keep the legacy of the Royal Air Force alive by providing enthusiasts and professionals with genuine <strong>RAF collectibles</strong> and <strong>vintage aircraft parts</strong>.</p>
+                <p style="margin-top: 20px;">We specialize in UK MOD surplus, including aircraft components, aviation test equipment, military communications systems, and historical RAF memorabilia. Each piece in our inventory helps tell the story of British aviation heritage while promoting sustainability through reuse.</p>
+            </div>
+
+            <div class="features">
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">✈️</div>
+                    <h3>RAF Aircraft Parts</h3>
+                    <p>Authentic RAF aircraft components from various eras, preserving aviation history for collectors and restorers</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">📡</div>
+                    <h3>Military Communications</h3>
+                    <p>Historic MOD communications and test equipment used by RAF personnel throughout British aviation history</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-icon" aria-hidden="true">🎖️</div>
+                    <h3>RAF Collectibles</h3>
+                    <p>Rare RAF memorabilia and collectibles that celebrate the rich history of the Royal Air Force</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section" aria-labelledby="values-heading">
+        <div class="container">
+            <h2 id="values-heading" class="section-title" style="color: white;">Our Core Values</h2>
+            <div class="values-grid">
+                <article class="value-item">
+                    <h3>♻️ Sustainability</h3>
+                    <p>We promote the reuse of military resources to support environmental conservation and reduce waste.</p>
+                </article>
+                <article class="value-item">
+                    <h3>⭐ Customer Satisfaction</h3>
+                    <p>We are committed to providing excellent service and building lasting relationships with our customers.</p>
+                </article>
+                <article class="value-item">
+                    <h3>🤝 Integrity</h3>
+                    <p>We conduct our business with honesty and transparency in all our dealings.</p>
+                </article>
+                <article class="value-item">
+                    <h3>🚀 Innovation</h3>
+                    <p>We continuously seek new ways to improve our products and services for you.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="buy-sell-section" id="contact" aria-labelledby="buy-heading">
+        <div class="container">
+            <h2 id="buy-heading">WE BUY SURPLUS MOD EQUIPMENT</h2>
+            <p>Have surplus MOD equipment to sell? We're interested! Get in touch with us today to discuss your items.</p>
+            <a href="mailto:contact@re-use.systems" class="btn btn-primary" style="background: #1B365D; color: white;" aria-label="Contact us via email">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="content-section" style="background: #F6F7F9;" id="listings">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="about-content" style="margin-bottom: 30px;">
+                <p>Browse our curated selection of authentic <strong>MOD aviation equipment</strong> and <strong>RAF collectibles</strong>. Each item plays a part in <strong>preserving RAF history</strong> for future generations. Visit our eBay store for our complete inventory!</p>
+            </div>
+            
+            <div class="ebay-config" style="max-width: 600px; margin: 0 auto 40px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Shop Our Complete Inventory</h3>
+                <p style="color: #111318; margin-bottom: 25px; font-size: 16px; line-height: 1.6;">Browse our full range of MOD aviation equipment, RAF collectibles, and vintage aircraft parts on our eBay store.</p>
+                <a href="https://www.ebay.co.uk/str/reusesystems" class="btn btn-primary" style="width: 100%; max-width: 400px; display: inline-block; text-align: center; font-size: 16px;" target="_blank" rel="noopener">
+                    Visit Our eBay Store →
+                </a>
+            </div>
+
+            <div id="productShowcase" class="ebay-listings" role="list">
+                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">
+                        ✈️
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title" itemprop="name">RAF Aircraft Components</h3>
+                        <div class="listing-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="priceCurrency" content="GBP">View Store</span>
+                        </div>
+                        <div class="listing-condition" itemprop="description">Genuine MOD surplus parts</div>
+                        <div class="listing-time">In stock now</div>
+                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View RAF Aircraft Components on eBay">View on eBay</a>
+                    </div>
+                </article>
+
+                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">
+                        📡
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title" itemprop="name">Military Communications Equipment</h3>
+                        <div class="listing-price">View Store</div>
+                        <div class="listing-condition" itemprop="description">Professional grade systems</div>
+                        <div class="listing-time">Multiple available</div>
+                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Military Communications Equipment on eBay">View on eBay</a>
+                    </div>
+                </article>
+
+                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">
+                        🎖️
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title" itemprop="name">RAF Collectibles & Memorabilia</h3>
+                        <div class="listing-price">View Store</div>
+                        <div class="listing-condition" itemprop="description">Authentic vintage items</div>
+                        <div class="listing-time">Rare pieces available</div>
+                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View RAF Collectibles on eBay">View on eBay</a>
+                    </div>
+                </article>
+
+                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">
+                        🔧
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title" itemprop="name">Aviation Test Equipment</h3>
+                        <div class="listing-price">View Store</div>
+                        <div class="listing-condition" itemprop="description">Precision instruments</div>
+                        <div class="listing-time">Professional quality</div>
+                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Aviation Test Equipment on eBay">View on eBay</a>
+                    </div>
+                </article>
+
+                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">
+                        📦
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title" itemprop="name">Army Surplus Equipment</h3>
+                        <div class="listing-price">View Store</div>
+                        <div class="listing-condition" itemprop="description">Wide selection available</div>
+                        <div class="listing-time">Regular stock updates</div>
+                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Army Surplus Equipment on eBay">View on eBay</a>
+                    </div>
+                </article>
+
+                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
+                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">
+                        🛠️
+                    </div>
+                    <div class="listing-content">
+                        <h3 class="listing-title" itemprop="name">Vintage Aircraft Parts</h3>
+                        <div class="listing-price">View Store</div>
+                        <div class="listing-condition" itemprop="description">Historical significance</div>
+                        <div class="listing-time">Collector's items</div>
+                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Vintage Aircraft Parts on eBay">View on eBay</a>
+                    </div>
+                </article>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://www.ebay.co.uk/str/reusesystems" id="viewAllBtn" class="btn btn-primary" target="_blank" rel="noopener" style="font-size: 16px; padding: 15px 40px;" aria-label="View all products on our eBay store">
+                    View All Products on eBay →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="mission-heading">
+        <div class="container">
+            <h2 id="mission-heading" class="section-title">Our Mission & Vision</h2>
+            <div class="about-content">
+                <article style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #FF6600; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-size: 20px;">Mission Statement</h3>
+                    <p style="color: #111318;">Our mission is to preserve RAF history by providing high-quality MOD surplus aviation equipment to enthusiasts and professionals, promoting sustainability through the reuse of authentic military heritage items.</p>
+                </article>
+                <article style="background: white; padding: 30px; border-radius: 10px; border-left: 4px solid #1B365D; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                    <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-size: 20px;">Vision Statement</h3>
+                    <p style="color: #111318;">Our vision is to be the leading provider of authentic RAF collectibles and MOD surplus equipment, inspiring a global community dedicated to preserving RAF history and British aviation heritage for future generations.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 20px;">
-                    <svg style="width: 50px; height: 50px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <svg style="width: 50px; height: 50px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RE-USE.SYSTEMS Logo">
+                        <title>RE-USE.SYSTEMS</title>
                         <path d="M100 40 L130 90 L70 90 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
                         <path d="M40 130 L70 80 L90 120 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
                         <path d="M160 130 L130 80 L110 120 Z" fill="#FF6600" stroke="#E55A00" stroke-width="3"/>
@@ -21,15 +295,33 @@
                 </div>
                 <p>Explore our products today and join our community of aviation enthusiasts!</p>
                 <p style="margin-top: 15px;">Let's preserve and celebrate military aviation together.</p>
-                <div class="footer-links">
-                    <a href="http://re-use.group" target="_blank">Re-Use.Group</a>
-                    <span style="color: #666;">|</span>
-                    <span style="font-family: 'Roboto Mono', monospace; font-size: 12px;">23 Westgate Street, PL15 7AD</span>
-                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="http://re-use.group" target="_blank" rel="noopener">Re-Use.Group</a>
+                    <span style="color: #666;" aria-hidden="true">|</span>
+                    <address style="font-family: 'Roboto Mono', monospace; font-size: 12px; display: inline; font-style: normal;">23 Westgate Street, PL15 7AD</address>
+                </nav>
                 <p style="margin-top: 20px; font-size: 14px; color: #999; font-family: 'Roboto Mono', monospace;">© 2023-2025 Re-Use Systems, a Re-Use.Group Company</p>
             </div>
         </div>
-    </footer><!DOCTYPE html>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
 <html lang="en-GB">
 <head>
     <meta charset="UTF-8">
@@ -40,10 +332,9 @@
     <meta name="title" content="RAF Collectibles & MOD Aviation Equipment | RE-USE.SYSTEMS Cornwall">
     <meta name="description" content="Preserving RAF history through authentic MOD aviation equipment. Shop vintage aircraft parts, RAF collectibles & military surplus. Based in Cornwall. Free UK delivery on orders over £50.">
     <meta name="keywords" content="RAF collectibles, MOD aviation equipment, RAF history, vintage aircraft parts, military surplus UK, aviation test equipment, RAF memorabilia Cornwall, UK military aircraft parts, MOD equipment Cornwall, preserving RAF history">
-    <meta name="keywords" content="MOD aviation equipment, RAF collectibles, military surplus UK, vintage aircraft parts, aviation test equipment, army surplus, MOD equipment Cornwall, UK military aircraft parts, RAF memorabilia, aviation communications equipment">
     <meta name="author" content="RE-USE.SYSTEMS">
     <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
+    <meta name="language" content="en-GB">
     <meta name="revisit-after" content="7 days">
     
     <!-- Canonical URL -->
@@ -195,7 +486,7 @@
         header {
             background: rgba(47, 58, 69, 0.98);
             backdrop-filter: blur(10px);
-            padding: 20px 0;
+            padding: 15px 0;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             position: sticky;
             top: 0;
@@ -208,26 +499,29 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            gap: 15px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
         }
 
         .logo-text {
             font-family: 'Montserrat', sans-serif;
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 700;
             color: #F6F7F9;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             text-transform: uppercase;
+            line-height: 1.2;
         }
 
         .logo-text span {
@@ -236,17 +530,18 @@
 
         .contact-header {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             color: #F6F7F9;
-            font-size: 13px;
+            font-size: 12px;
+            white-space: nowrap;
         }
 
         .hero {
@@ -254,29 +549,60 @@
                         url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%232F3A45" width="1200" height="600"/><path fill="%231B365D" opacity="0.5" d="M0 300L50 283.3C100 266.7 200 233.3 300 233.3C400 233.3 500 266.7 600 283.3C700 300 800 300 900 283.3C1000 266.7 1100 233.3 1150 216.7L1200 200V600H1150C1100 600 1000 600 900 600C800 600 700 600 600 600C500 600 400 600 300 600C200 600 100 600 50 600H0V300Z"/></svg>');
             background-size: cover;
             background-position: center;
-            padding: 100px 20px;
+            padding: 120px 20px 100px;
             text-align: center;
             color: white;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(255, 102, 0, 0.2);
+            border: 2px solid #FF6600;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #FF6600;
+            margin-bottom: 30px;
+            animation: fadeInDown 1s ease-out;
         }
 
         .hero h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 48px;
+            font-size: 56px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            animation: fadeInDown 1s ease-out;
+            animation: fadeInDown 1s ease-out 0.2s both;
+            line-height: 1.2;
+        }
+
+        .hero-tagline {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            color: #FF6600;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out 0.4s both;
         }
 
         .hero p {
             font-family: 'Roboto', sans-serif;
-            font-size: 22px;
-            max-width: 800px;
-            margin: 0 auto 30px;
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 40px;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-            animation: fadeInUp 1s ease-out 0.3s both;
+            animation: fadeInUp 1s ease-out 0.6s both;
+            line-height: 1.6;
         }
 
         .cta-buttons {
@@ -284,7 +610,7 @@
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
-            animation: fadeInUp 1s ease-out 0.6s both;
+            animation: fadeInUp 1s ease-out 0.8s both;
         }
 
         .btn {
@@ -959,317 +1285,3 @@
             
             input[type="text"],
             input[type="number"] {
-                font-size: 16px; /* Prevents zoom on iOS */
-            }
-        }
-    </style>
-</head>
-<body>
-    <header role="banner">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <svg class="logo-img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RE-USE.SYSTEMS Logo">
-                        <title>RE-USE.SYSTEMS - MOD Aviation Equipment Specialists</title>
-                        <!-- Recycle symbol base -->
-                        <path d="M100 40 L130 90 L70 90 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
-                        <path d="M40 130 L70 80 L90 120 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
-                        <path d="M160 130 L130 80 L110 120 Z" fill="#FF6600" stroke="#E55A00" stroke-width="3"/>
-                        
-                        <!-- Arrows -->
-                        <path d="M85 95 L55 135 L65 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
-                        <path d="M115 95 L145 135 L135 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
-                        <path d="M100 125 L100 85" fill="none" stroke="#FF6600" stroke-width="2"/>
-                        
-                        <!-- Fighter jet -->
-                        <g transform="translate(140, 40) scale(0.3)">
-                            <path d="M0 20 L30 10 L40 15 L30 20 L40 25 L30 30 L0 20 Z" fill="#FF6600"/>
-                            <path d="M10 20 L5 10 L15 20 L5 30 Z" fill="#E55A00"/>
-                        </g>
-                        
-                        <!-- Power symbol in center -->
-                        <circle cx="100" cy="105" r="20" fill="#2F3A45" stroke="#F6F7F9" stroke-width="3"/>
-                        <line x1="100" y1="95" x2="100" y2="105" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
-                        <path d="M90 105 A 15 15 0 1 1 110 105" fill="none" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
-                    </svg>
-                    <div class="logo-text">Re-<span>Use</span><br><span style="font-size: 16px; letter-spacing: 4px;">SYSTEMS</span></div>logo-text">Re-<span>Use</span><br><span style="font-size: 20px; letter-spacing: 4px;">SYSTEMS</span></div>
-                </div>
-                <div class="contact-header">
-                    <div class="contact-item">
-                        <span>📍</span>
-                        <span>23 Westgate Street, PL15 7AD</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>🏢</span>
-                        <span>A Re-Use.Group Company</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="hero" role="banner">
-        <div class="container">
-            <div class="hero-badge">Cornwall, UK • Trusted Since 2023</div>
-            <h1>Preserving RAF History</h1>
-            <p class="hero-tagline">Military Heritage. Sustainable Future.</p>
-            <p>Authentic MOD aviation equipment, RAF collectibles, and vintage aircraft parts for enthusiasts and professionals across the UK.</p>
-            <div class="cta-buttons">
-                <a href="#listings" class="btn btn-primary">Shop Our Collection</a>
-                <a href="#about" class="btn btn-secondary">Our Story</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scrolling Marquee -->
-    <div class="marquee-container" role="marquee" aria-label="Product categories">
-        <div class="marquee">
-            <div class="marquee-text">
-                <span>MOD AVIATION EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>RAF COLLECTIBLES</span>
-                <span class="marquee-separator">•</span>
-                <span>VINTAGE AIRCRAFT PARTS</span>
-                <span class="marquee-separator">•</span>
-                <span>MILITARY SURPLUS</span>
-                <span class="marquee-separator">•</span>
-                <span>COMMUNICATIONS EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>AVIATION TEST GEAR</span>
-                <span class="marquee-separator">•</span>
-                <span>MOD AVIATION EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>RAF COLLECTIBLES</span>
-                <span class="marquee-separator">•</span>
-                <span>VINTAGE AIRCRAFT PARTS</span>
-                <span class="marquee-separator">•</span>
-                <span>MILITARY SURPLUS</span>
-                <span class="marquee-separator">•</span>
-                <span>COMMUNICATIONS EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>AVIATION TEST GEAR</span>
-                <span class="marquee-separator">•</span>
-            </div>
-        </div>
-    </div>
-
-    <section class="content-section" id="about" itemscope itemtype="https://schema.org/AboutPage">
-        <div class="container">
-            <h2 class="section-title">About RE-USE.Systems</h2>
-            <div class="about-content" itemprop="description">
-                <p>At RE-USE.Systems, we are dedicated to <strong>preserving RAF history</strong> through the careful curation and sale of authentic <strong>MOD aviation equipment</strong>. Our mission is to keep the legacy of the Royal Air Force alive by providing enthusiasts and professionals with genuine <strong>RAF collectibles</strong> and <strong>vintage aircraft parts</strong>.</p>
-                <p style="margin-top: 20px;">We specialize in UK MOD surplus, including aircraft components, aviation test equipment, military communications systems, and historical RAF memorabilia. Each piece in our inventory helps tell the story of British aviation heritage while promoting sustainability through reuse.</p>
-            </div>
-
-            <div class="features">
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">✈️</div>
-                    <h3>RAF Aircraft Parts</h3>
-                    <p>Authentic RAF aircraft components from various eras, preserving aviation history for collectors and restorers</p>
-                </article>
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">📡</div>
-                    <h3>Military Communications</h3>
-                    <p>Historic MOD communications and test equipment used by RAF personnel throughout British aviation history</p>
-                </article>
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🎖️</div>
-                    <h3>RAF Collectibles</h3>
-                    <p>Rare RAF memorabilia and collectibles that celebrate the rich history of the Royal Air Force</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="values-section" aria-labelledby="values-heading">
-        <div class="container">
-            <h2 id="values-heading" class="section-title" style="color: white;">Our Core Values</h2>
-            <div class="values-grid">
-                <article class="value-item">
-                    <h3>♻️ Sustainability</h3>
-                    <p>We promote the reuse of military resources to support environmental conservation and reduce waste.</p>
-                </article>
-                <article class="value-item">
-                    <h3>⭐ Customer Satisfaction</h3>
-                    <p>We are committed to providing excellent service and building lasting relationships with our customers.</p>
-                </article>
-                <article class="value-item">
-                    <h3>🤝 Integrity</h3>
-                    <p>We conduct our business with honesty and transparency in all our dealings.</p>
-                </article>
-                <article class="value-item">
-                    <h3>🚀 Innovation</h3>
-                    <p>We continuously seek new ways to improve our products and services for you.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="buy-sell-section" id="contact" aria-labelledby="buy-heading">
-        <div class="container">
-            <h2 id="buy-heading">WE BUY SURPLUS MOD EQUIPMENT</h2>
-            <p>Have surplus MOD equipment to sell? We're interested! Get in touch with us today to discuss your items.</p>
-            <a href="mailto:contact@re-use.systems" class="btn btn-primary" style="background: #1B365D; color: white;" aria-label="Contact us via email">Contact Us</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="background: #F6F7F9;" id="listings">
-        <div class="container">
-            <h2 class="section-title">Featured Products</h2>
-            <div class="about-content" style="margin-bottom: 30px;">
-                <p>Browse our curated selection of authentic <strong>MOD aviation equipment</strong> and <strong>RAF collectibles</strong>. Each item plays a part in <strong>preserving RAF history</strong> for future generations. Visit our eBay store for our complete inventory!</p>
-            </div>
-            
-            <div class="ebay-config" style="max-width: 600px; margin: 0 auto 40px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
-                <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Shop Our Complete Inventory</h3>
-                <p style="color: #111318; margin-bottom: 25px; font-size: 16px; line-height: 1.6;">Browse our full range of MOD aviation equipment, RAF collectibles, and vintage aircraft parts on our eBay store.</p>
-                <a href="https://www.ebay.co.uk/str/reusesystems" class="btn btn-primary" style="width: 100%; max-width: 400px; display: inline-block; text-align: center; font-size: 16px;" target="_blank" rel="noopener">
-                    Visit Our eBay Store →
-                </a>
-            </div>
-
-            <div id="productShowcase" class="ebay-listings" role="list">
-                <!-- Sample products - you can customize these -->
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">
-                        ✈️
-                    </div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">RAF Aircraft Components</h3>
-                        <div class="listing-price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-                            <span itemprop="priceCurrency" content="GBP">View Store</span>
-                        </div>
-                        <p class="listing-condition" itemprop="description">Genuine MOD surplus parts</p>
-                        <p class="listing-time">In stock now</p>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View RAF Aircraft Components on eBay">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">
-                        📡
-                    </div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Military Communications Equipment</h3>
-                        <div class="listing-price">View Store</div>
-                        <p class="listing-condition" itemprop="description">Professional grade systems</p>
-                        <p class="listing-time">Multiple available</p>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Military Communications Equipment on eBay">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">
-                        🎖️
-                    </div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">RAF Collectibles & Memorabilia</h3>
-                        <div class="listing-price">View Store</div>
-                        <p class="listing-condition" itemprop="description">Authentic vintage items</p>
-                        <p class="listing-time">Rare pieces available</p>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View RAF Collectibles on eBay">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">
-                        🔧
-                    </div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Aviation Test Equipment</h3>
-                        <div class="listing-price">View Store</div>
-                        <p class="listing-condition" itemprop="description">Precision instruments</p>
-                        <p class="listing-time">Professional quality</p>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Aviation Test Equipment on eBay">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">
-                        📦
-                    </div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Army Surplus Equipment</h3>
-                        <div class="listing-price">View Store</div>
-                        <p class="listing-condition" itemprop="description">Wide selection available</p>
-                        <p class="listing-time">Regular stock updates</p>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Army Surplus Equipment on eBay">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">
-                        🛠️
-                    </div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Vintage Aircraft Parts</h3>
-                        <div class="listing-price">View Store</div>
-                        <p class="listing-condition" itemprop="description">Historical significance</p>
-                        <p class="listing-time">Collector's items</p>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener" aria-label="View Vintage Aircraft Parts on eBay">View on eBay</a>
-                    </div>
-                </article>
-            </div> significance</div>
-                        <div class="listing-time">Collector's items</div>
-                        <a href="#" class="listing-btn store-link">View on eBay</a>
-                    </div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="#" id="viewAllBtn" class="btn btn-primary" target="_blank" style="font-size: 16px; padding: 15px 40px;">
-                    View All Products on eBay →
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section">
-        <div class="container">
-            <h2 class="section-title">Our Mission & Vision</h2>
-            <div class="about-content">
-                <div style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #FF6600; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-                    <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-size: 20px;">Mission Statement</h3>
-                    <p style="color: #111318;">Our mission is to provide high-quality MOD surplus equipment to aviation enthusiasts and professionals, promoting sustainability through reuse.</p>
-                </div>
-                <div style="background: white; padding: 30px; border-radius: 10px; border-left: 4px solid #1B365D; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-                    <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-size: 20px;">Vision Statement</h3>
-                    <p style="color: #111318;">Our vision is to be the leading provider of MOD surplus equipment, inspiring a global community of aviation enthusiasts and professionals. We aim to lead in sustainability, innovation, and customer satisfaction.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="logo" style="color: white; margin-bottom: 20px;">RE-<span>USE</span>.SYSTEMS</div>
-                <p>Explore our products today and join our community of aviation enthusiasts!</p>
-                <p style="margin-top: 15px;">Let's preserve and celebrate military aviation together.</p>
-                <div class="footer-links">
-                    <a href="http://re-use.group" target="_blank">Re-Use.Group</a>
-                    <span style="color: #666;">|</span>
-                    <span>23 Westgate Street, PL15 7AD</span>
-                </div>
-                <p style="margin-top: 20px; font-size: 14px; color: #999;">© 2023-2025 Re-Use Systems, a Re-Use.Group Company</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && href.length > 1) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }
-            });
-        });
-    </script>
-</body>
-</html>
