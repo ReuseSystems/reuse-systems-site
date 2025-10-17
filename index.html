@@ -680,15 +680,21 @@
     </style>
 </head>
 <body>
-    <!-- Hidden form for Netlify detection -->
+    <!-- Hidden form for Netlify detection - MUST match visible form exactly -->
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />
         <input type="tel" name="phone" />
         <select name="subject">
+            <option value="">Please select...</option>
             <option value="I have equipment to sell">I have equipment to sell</option>
+            <option value="Question about a product">Question about a product</option>
+            <option value="Authenticity inquiry">Authenticity inquiry</option>
+            <option value="General inquiry">General inquiry</option>
+            <option value="Other">Other</option>
         </select>
         <textarea name="message"></textarea>
+        <input name="bot-field" />
     </form>
 
     <header>
