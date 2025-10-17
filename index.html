@@ -676,6 +676,17 @@
     </style>
 </head>
 <body>
+    <!-- Hidden form for Netlify detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <select name="subject">
+            <option value="I have equipment to sell">I have equipment to sell</option>
+        </select>
+        <textarea name="message"></textarea>
+    </form>
+
     <header>
         <div class="container">
             <div class="header-content">
