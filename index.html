@@ -17,10 +17,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://re-use.systems/">
     
-    <!-- Sitemap -->
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-    
-    <!-- Open Graph / Facebook -->
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://re-use.systems/">
@@ -53,7 +49,7 @@
       "url": "https://re-use.systems",
       "logo": "https://re-use.systems/images/logo.png",
       "image": "https://re-use.systems/images/store.jpg",
-      "telephone": "+44-XXX-XXX-XXXX",
+      "telephone": "+44-1566-XXX-XXX",
       "email": "contact@re-use.systems",
       "address": {
         "@type": "PostalAddress",
@@ -109,9 +105,7 @@
         ]
       },
       "sameAs": [
-        "https://www.ebay.co.uk/str/reusesystems",
-        "https://www.facebook.com/reusesystems",
-        "https://twitter.com/reusesystems"
+        "https://www.ebay.co.uk/str/reusesystems"
       ],
       "parentOrganization": {
         "@type": "Organization",
@@ -223,6 +217,15 @@
             color: #F6F7F9;
             font-size: 12px;
             white-space: nowrap;
+        }
+
+        .contact-item a {
+            color: #FF6600;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
         }
 
         .hero {
@@ -540,91 +543,195 @@
             animation-play-state: paused;
         }
 
-        .ebay-listings {
+        /* ========== FEATURED PRODUCTS STYLES ========== */
+        
+        .products-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
             gap: 25px;
-            margin-top: 30px;
+            margin-bottom: 40px;
         }
 
-        .listing-card {
+        .product-card {
             background: white;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+            border: 2px solid transparent;
             display: flex;
             flex-direction: column;
-            border: 2px solid transparent;
         }
 
-        .listing-card:hover {
+        .product-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
             border-color: #FF6600;
         }
 
-        .listing-content {
+        .product-image-wrapper {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%);
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-placeholder {
+            font-size: 72px;
+            color: rgba(246, 247, 249, 0.3);
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #FF6600;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .product-content {
             padding: 20px;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
 
-        .listing-title {
+        .product-title {
             font-family: 'Roboto', sans-serif;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
             color: #1B365D;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
             line-height: 1.4;
+            min-height: 50px;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
             display: -webkit-box;
-            -webkit-line-clamp: 2;
+            -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
         }
 
-        .listing-price {
+        .product-meta {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .meta-badge {
+            font-size: 12px;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .badge-condition {
+            background: #E8F5E9;
+            color: #2E7D32;
+        }
+
+        .badge-era {
+            background: #FFF3E0;
+            color: #E65100;
+        }
+
+        .product-price {
             font-family: 'Montserrat', sans-serif;
-            font-size: 24px;
+            font-size: 28px;
             font-weight: 700;
             color: #FF6600;
-            margin-bottom: 10px;
-        }
-
-        .listing-condition {
-            font-size: 14px;
-            color: #111318;
-            margin-bottom: 10px;
-        }
-
-        .listing-time {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 12px;
-            color: #2F3A45;
+            margin-bottom: 15px;
             margin-top: auto;
         }
 
-        .listing-btn {
-            display: inline-block;
-            padding: 10px 20px;
+        .product-btn {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
             background: #1B365D;
             color: white;
             font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
+            font-size: 13px;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
             text-decoration: none;
             border-radius: 5px;
             text-align: center;
-            margin-top: 15px;
             transition: all 0.3s ease;
         }
 
-        .listing-btn:hover {
+        .product-btn:hover {
+            background: #FF6600;
+            transform: translateY(-2px);
+        }
+
+        .store-cta {
+            background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%);
+            padding: 60px 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .store-cta h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .store-cta p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .store-cta-btn {
+            display: inline-block;
+            padding: 18px 50px;
             background: #FF6600;
             color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .store-cta-btn:hover {
+            background: #E55A00;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 102, 0, 0.5);
         }
 
         @keyframes fadeInDown {
@@ -812,7 +919,7 @@
                 gap: 20px;
             }
             
-            .ebay-listings {
+            .products-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
@@ -830,6 +937,14 @@
                 flex-direction: column;
                 gap: 10px;
             }
+
+            .store-cta h3 {
+                font-size: 24px;
+            }
+
+            .store-cta p {
+                font-size: 16px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -840,424 +955,4 @@
 
             .marquee-text span {
                 padding: 0 15px;
-            }
-
-            .marquee-separator {
-                padding: 0 10px;
-            }
-
-            .hero h1 {
-                font-size: 24px;
-            }
             
-            .hero-tagline {
-                font-size: 16px;
-                letter-spacing: 1.5px;
-            }
-            
-            .hero p {
-                font-size: 14px;
-            }
-            
-            .hero-badge {
-                font-size: 9px;
-                padding: 5px 12px;
-                letter-spacing: 1.5px;
-            }
-            
-            header {
-                padding: 8px 0;
-            }
-            
-            .container {
-                padding: 10px;
-            }
-            
-            .logo {
-                gap: 8px;
-            }
-            
-            .logo-img {
-                width: 35px;
-                height: 35px;
-            }
-            
-            .logo-text {
-                font-size: 16px;
-                letter-spacing: 1px;
-            }
-            
-            .contact-header {
-                gap: 6px;
-                font-size: 10px;
-            }
-            
-            .contact-item {
-                font-size: 10px;
-                gap: 4px;
-            }
-            
-            .contact-item span[itemprop] {
-                font-size: 9px;
-            }
-            
-            .section-title {
-                font-size: 24px;
-            }
-            
-            .feature-card h3 {
-                font-size: 18px;
-            }
-            
-            .buy-sell-section h2 {
-                font-size: 24px;
-            }
-            
-            .listing-card {
-                margin: 0 5px;
-            }
-            
-            .btn {
-                padding: 10px 20px;
-                font-size: 12px;
-            }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .ebay-listings {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .features {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .values-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 481px) and (max-width: 768px) {
-            .ebay-listings {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (hover: none) and (pointer: coarse) {
-            .btn {
-                min-height: 44px;
-                min-width: 44px;
-            }
-            
-            .listing-btn {
-                min-height: 44px;
-            }
-            
-            input[type="text"],
-            input[type="number"] {
-                font-size: 16px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header role="banner">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <svg class="logo-img" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RE-USE.SYSTEMS Logo">
-                        <title>RE-USE.SYSTEMS - MOD Aviation Equipment Specialists</title>
-                        <path d="M100 40 L130 90 L70 90 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
-                        <path d="M40 130 L70 80 L90 120 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
-                        <path d="M160 130 L130 80 L110 120 Z" fill="#FF6600" stroke="#E55A00" stroke-width="3"/>
-                        <path d="M85 95 L55 135 L65 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
-                        <path d="M115 95 L145 135 L135 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
-                        <path d="M100 125 L100 85" fill="none" stroke="#FF6600" stroke-width="2"/>
-                        <g transform="translate(140, 40) scale(0.3)">
-                            <path d="M0 20 L30 10 L40 15 L30 20 L40 25 L30 30 L0 20 Z" fill="#FF6600"/>
-                            <path d="M10 20 L5 10 L15 20 L5 30 Z" fill="#E55A00"/>
-                        </g>
-                        <circle cx="100" cy="105" r="20" fill="#2F3A45" stroke="#F6F7F9" stroke-width="3"/>
-                        <line x1="100" y1="95" x2="100" y2="105" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
-                        <path d="M90 105 A 15 15 0 1 1 110 105" fill="none" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
-                    </svg>
-                    <div class="logo-text">Re-<span>Use</span> <span style="font-size: 14px; letter-spacing: 3px;">SYSTEMS</span></div>
-                </div>
-                <address class="contact-header" style="font-style: normal;">
-                    <div class="contact-item">
-                        <span aria-hidden="true">📍</span>
-                        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">23 Westgate Street</span>, 
-                            <span itemprop="postalCode">PL15 7AD</span>
-                        </span>
-                    </div>
-                    <div class="contact-item">
-                        <span aria-hidden="true">🏢</span>
-                        <span>A <a href="http://re-use.group" target="_blank" rel="noopener">Re-Use.Group</a> Company</span>
-                    </div>
-                </address>
-            </div>
-        </div>
-    </header>
-
-    <section class="hero" role="banner">
-        <div class="container">
-            <div class="hero-badge">Cornwall, UK • Trusted Since 2023</div>
-            <h1>Preserving RAF History</h1>
-            <p class="hero-tagline">Military Heritage. Sustainable Future.</p>
-            <p>Authentic MOD aviation equipment, RAF collectibles, and vintage aircraft parts for enthusiasts and professionals across the UK.</p>
-            <div class="cta-buttons">
-                <a href="#listings" class="btn btn-primary">Shop Our Collection</a>
-                <a href="#about" class="btn btn-secondary">Our Story</a>
-            </div>
-        </div>
-    </section>
-
-    <div class="marquee-container" role="marquee" aria-label="Product categories">
-        <div class="marquee">
-            <div class="marquee-text">
-                <span>MOD AVIATION EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>RAF COLLECTIBLES</span>
-                <span class="marquee-separator">•</span>
-                <span>VINTAGE AIRCRAFT PARTS</span>
-                <span class="marquee-separator">•</span>
-                <span>MILITARY SURPLUS</span>
-                <span class="marquee-separator">•</span>
-                <span>COMMUNICATIONS EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>AVIATION TEST GEAR</span>
-                <span class="marquee-separator">•</span>
-                <span>MOD AVIATION EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>RAF COLLECTIBLES</span>
-                <span class="marquee-separator">•</span>
-                <span>VINTAGE AIRCRAFT PARTS</span>
-                <span class="marquee-separator">•</span>
-                <span>MILITARY SURPLUS</span>
-                <span class="marquee-separator">•</span>
-                <span>COMMUNICATIONS EQUIPMENT</span>
-                <span class="marquee-separator">•</span>
-                <span>AVIATION TEST GEAR</span>
-                <span class="marquee-separator">•</span>
-            </div>
-        </div>
-    </div>
-
-    <section class="content-section" id="about" itemscope itemtype="https://schema.org/AboutPage">
-        <div class="container">
-            <h2 class="section-title">About RE-USE.Systems</h2>
-            <div class="about-content" itemprop="description">
-                <p>At RE-USE.Systems, we are dedicated to <strong>preserving RAF history</strong> through the careful curation and sale of authentic <strong>MOD aviation equipment</strong>. Our mission is to keep the legacy of the Royal Air Force alive by providing enthusiasts and professionals with genuine <strong>RAF collectibles</strong> and <strong>vintage aircraft parts</strong>.</p>
-                <p style="margin-top: 20px;">We specialize in UK MOD surplus, including aircraft components, aviation test equipment, military communications systems, and historical RAF memorabilia. Each piece in our inventory helps tell the story of British aviation heritage while promoting sustainability through reuse.</p>
-            </div>
-
-            <div class="features">
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">✈️</div>
-                    <h3>RAF Aircraft Parts</h3>
-                    <p>Authentic RAF aircraft components from various eras, preserving aviation history for collectors and restorers</p>
-                </article>
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">📡</div>
-                    <h3>Military Communications</h3>
-                    <p>Historic MOD communications and test equipment used by RAF personnel throughout British aviation history</p>
-                </article>
-                <article class="feature-card">
-                    <div class="feature-icon" aria-hidden="true">🎖️</div>
-                    <h3>RAF Collectibles</h3>
-                    <p>Rare RAF memorabilia and collectibles that celebrate the rich history of the Royal Air Force</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="values-section" aria-labelledby="values-heading">
-        <div class="container">
-            <h2 id="values-heading" class="section-title" style="color: white;">Our Core Values</h2>
-            <div class="values-grid">
-                <article class="value-item">
-                    <h3>♻️ Sustainability</h3>
-                    <p>We promote the reuse of military resources to support environmental conservation and reduce waste.</p>
-                </article>
-                <article class="value-item">
-                    <h3>⭐ Customer Satisfaction</h3>
-                    <p>We are committed to providing excellent service and building lasting relationships with our customers.</p>
-                </article>
-                <article class="value-item">
-                    <h3>🤝 Integrity</h3>
-                    <p>We conduct our business with honesty and transparency in all our dealings.</p>
-                </article>
-                <article class="value-item">
-                    <h3>🚀 Innovation</h3>
-                    <p>We continuously seek new ways to improve our products and services for you.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="buy-sell-section" id="contact" aria-labelledby="buy-heading">
-        <div class="container">
-            <h2 id="buy-heading">WE BUY SURPLUS MOD EQUIPMENT</h2>
-            <p>Have surplus MOD equipment to sell? We're interested! Get in touch with us today to discuss your items.</p>
-            <a href="mailto:contact@re-use.systems" class="btn btn-primary" style="background: #1B365D; color: white;" aria-label="Contact us via email">Contact Us</a>
-        </div>
-    </section>
-
-    <section class="content-section" style="background: #F6F7F9;" id="listings">
-        <div class="container">
-            <h2 class="section-title">Featured Products</h2>
-            <div class="about-content" style="margin-bottom: 30px;">
-                <p>Browse our curated selection of authentic <strong>MOD aviation equipment</strong> and <strong>RAF collectibles</strong>. Each item plays a part in <strong>preserving RAF history</strong> for future generations. Visit our eBay store for our complete inventory!</p>
-            </div>
-            
-            <div class="ebay-config" style="max-width: 600px; margin: 0 auto 40px; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
-                <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px;">Shop Our Complete Inventory</h3>
-                <p style="color: #111318; margin-bottom: 25px; font-size: 16px; line-height: 1.6;">Browse our full range of MOD aviation equipment, RAF collectibles, and vintage aircraft parts on our eBay store.</p>
-                <a href="https://www.ebay.co.uk/str/reusesystems" class="btn btn-primary" style="width: 100%; max-width: 400px; display: inline-block; text-align: center; font-size: 16px;" target="_blank" rel="noopener">
-                    Visit Our eBay Store →
-                </a>
-            </div>
-
-            <div id="productShowcase" class="ebay-listings" role="list">
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">✈️</div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">RAF Aircraft Components</h3>
-                        <div class="listing-price">View Store</div>
-                        <div class="listing-condition">Genuine MOD surplus parts</div>
-                        <div class="listing-time">In stock now</div>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">📡</div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Military Communications Equipment</h3>
-                        <div class="listing-price">View Store</div>
-                        <div class="listing-condition">Professional grade systems</div>
-                        <div class="listing-time">Multiple available</div>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">🎖️</div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">RAF Collectibles & Memorabilia</h3>
-                        <div class="listing-price">View Store</div>
-                        <div class="listing-condition">Authentic vintage items</div>
-                        <div class="listing-time">Rare pieces available</div>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">🔧</div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Aviation Test Equipment</h3>
-                        <div class="listing-price">View Store</div>
-                        <div class="listing-condition">Precision instruments</div>
-                        <div class="listing-time">Professional quality</div>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #2F3A45 0%, #1B365D 100%); display: flex; align-items: center; justify-content: center; color: #F6F7F9; font-size: 48px;" aria-hidden="true">📦</div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Army Surplus Equipment</h3>
-                        <div class="listing-price">View Store</div>
-                        <div class="listing-condition">Wide selection available</div>
-                        <div class="listing-time">Regular stock updates</div>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener">View on eBay</a>
-                    </div>
-                </article>
-
-                <article class="listing-card" role="listitem" itemscope itemtype="https://schema.org/Product">
-                    <div style="width: 100%; height: 220px; background: linear-gradient(135deg, #1B365D 0%, #2F3A45 100%); display: flex; align-items: center; justify-content: center; color: #FF6600; font-size: 48px;" aria-hidden="true">🛠️</div>
-                    <div class="listing-content">
-                        <h3 class="listing-title" itemprop="name">Vintage Aircraft Parts</h3>
-                        <div class="listing-price">View Store</div>
-                        <div class="listing-condition">Historical significance</div>
-                        <div class="listing-time">Collector's items</div>
-                        <a href="https://www.ebay.co.uk/str/reusesystems" class="listing-btn" target="_blank" rel="noopener">View on eBay</a>
-                    </div>
-                </article>
-            </div>
-
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="https://www.ebay.co.uk/str/reusesystems" class="btn btn-primary" target="_blank" rel="noopener" style="font-size: 16px; padding: 15px 40px;">
-                    View All Products on eBay →
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="content-section" aria-labelledby="mission-heading">
-        <div class="container">
-            <h2 id="mission-heading" class="section-title">Our Mission & Vision</h2>
-            <div class="about-content">
-                <article style="background: white; padding: 30px; border-radius: 10px; margin-bottom: 20px; border-left: 4px solid #FF6600; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-                    <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-size: 20px;">Mission Statement</h3>
-                    <p style="color: #111318;">Our mission is to preserve RAF history by providing high-quality MOD surplus aviation equipment to enthusiasts and professionals, promoting sustainability through the reuse of authentic military heritage items.</p>
-                </article>
-                <article style="background: white; padding: 30px; border-radius: 10px; border-left: 4px solid #1B365D; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
-                    <h3 style="font-family: 'Montserrat', sans-serif; color: #1B365D; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-size: 20px;">Vision Statement</h3>
-                    <p style="color: #111318;">Our vision is to be the leading provider of authentic RAF collectibles and MOD surplus equipment, inspiring a global community dedicated to preserving RAF history and British aviation heritage for future generations.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <footer role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-bottom: 20px;">
-                    <svg style="width: 50px; height: 50px;" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RE-USE.SYSTEMS Logo">
-                        <title>RE-USE.SYSTEMS</title>
-                        <path d="M100 40 L130 90 L70 90 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
-                        <path d="M40 130 L70 80 L90 120 Z" fill="#1B365D" stroke="#2F3A45" stroke-width="3"/>
-                        <path d="M160 130 L130 80 L110 120 Z" fill="#FF6600" stroke="#E55A00" stroke-width="3"/>
-                        <path d="M85 95 L55 135 L65 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
-                        <path d="M115 95 L145 135 L135 125" fill="#FF6600" stroke="#E55A00" stroke-width="2"/>
-                        <path d="M100 125 L100 85" fill="none" stroke="#FF6600" stroke-width="2"/>
-                        <g transform="translate(140, 40) scale(0.3)">
-                            <path d="M0 20 L30 10 L40 15 L30 20 L40 25 L30 30 L0 20 Z" fill="#FF6600"/>
-                            <path d="M10 20 L5 10 L15 20 L5 30 Z" fill="#E55A00"/>
-                        </g>
-                        <circle cx="100" cy="105" r="20" fill="#2F3A45" stroke="#F6F7F9" stroke-width="3"/>
-                        <line x1="100" y1="95" x2="100" y2="105" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
-                        <path d="M90 105 A 15 15 0 1 1 110 105" fill="none" stroke="#F6F7F9" stroke-width="5" stroke-linecap="round"/>
-                    </svg>
-                    <div style="font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #F6F7F9;">Re-<span style="color: #FF6600;">Use</span><br><span style="font-size: 14px; letter-spacing: 3px;">SYSTEMS</span></div>
-                </div>
-                <p>Explore our products today and join our community of aviation enthusiasts!</p>
-                <p style="margin-top: 15px;">Let's preserve and celebrate military aviation together.</p>
-                <nav class="footer-links" aria-label="Footer navigation">
-                    <a href="http://re-use.group" target="_blank" rel="noopener">Re-Use.Group</a>
-                    <span style="color: #666;" aria-hidden="true">|</span>
-                    <address style="font-family: 'Roboto Mono', monospace; font-size: 12px; display: inline; font-style: normal;">23 Westgate Street, PL15 7AD</address>
-                </nav>
-                <p style="margin-top: 20px; font-size: 14px; color: #999; font-family: 'Roboto Mono', monospace;">© 2023-2025 Re-Use Systems, a Re-Use.Group Company</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && href.length > 1) {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }
-            });
-        });
-    </script>
-</body>
-</html>
